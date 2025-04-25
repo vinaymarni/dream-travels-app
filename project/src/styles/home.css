@@ -6,3 +6,18 @@
     align-items: center;
     padding-top: 80px;
 }
+
+.homeMainContainer{
+    width: 100%;
+    object-fit: cover;
+}
+
+.CarouselEachImageCon{
+    min-height: 400px;
+    width: 100%;
+}
+
+.carouselEachImage{
+    width: 100%;
+    height: 100%;
+}

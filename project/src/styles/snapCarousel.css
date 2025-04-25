@@ -1,0 +1,95 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 600px; */
+    margin: auto;
+  }
+  
+  .carousel__viewport {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .carousel__viewport::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #ccc;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .carousel__prev {
+    left: 1rem;
+  }
+  
+  .carousel__next {
+    right: 1rem;
+  }
+  
+  .carousel__navigation {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .carousel__navigation-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: #888;
+    border-radius: 50%;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel__navigation-button:hover {
+    background: #333;
+  }
+  
+.carouselEachImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
